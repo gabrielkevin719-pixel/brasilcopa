@@ -3,7 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npx serve storyebrasil.com.br -p 3000",
-    "start": "npx serve storyebrasil.com.br -p 3000"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^15.3.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.6",
+    "@types/react": "19.2.14",
+    "typescript": "5.8.2"
   }
 }
