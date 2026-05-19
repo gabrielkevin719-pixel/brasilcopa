@@ -1,0 +1,9 @@
+{
+  "name": "brasilcopa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve storyebrasil.com.br -p 3000",
+    "start": "npx serve storyebrasil.com.br -p 3000"
+  }
+}
