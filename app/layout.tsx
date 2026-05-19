@@ -1,9 +1,12 @@
 import type { Metadata } from "next"
+import { Inter } from "next/font/google"
 import "./globals.css"
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
+
 export const metadata: Metadata = {
-  title: "Brasil Copa - Camisas de Futebol",
-  description: "Loja de camisas de futebol do Brasil",
+  title: "Camisas do Brasil - Loja Oficial da Seleção Brasileira",
+  description: "A melhor loja de camisas da Seleção Brasileira. Modelos atuais, retrô e edições especiais.",
 }
 
 export default function RootLayout({
@@ -12,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className="bg-background">
-      <body>{children}</body>
+    <html lang="pt-BR" className={`${inter.variable} bg-white`}>
+      <body className="font-sans">{children}</body>
     </html>
   )
 }
